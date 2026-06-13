@@ -5,6 +5,7 @@ def adls_connector():
 
 # COMMAND ----------
 
+from pyspark.sql.window import Window
 from pyspark.sql import DataFrameWriter
 
 # COMMAND ----------
@@ -93,4 +94,5 @@ def write2sqldatabase(df, table_name):
     print("successfully written in database")
 
 # COMMAND ----------
+
 
